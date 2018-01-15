@@ -1,6 +1,5 @@
-from setuptools import setup
-
 import setuptools_webpack
+from setuptools import setup
 
 
 def main():
@@ -13,15 +12,12 @@ def main():
           author_email='jan.musilek@nic.cz',
           entry_points={
               "distutils.commands": [
-                  "run_webpack = setuptools_webpack:run_webpack",
-              ],
-              "distutils.setup_keywords": [
-                  "webpack_output_path = setuptools_webpack:check_webpack_output_path",
+                  "build_js = setuptools_webpack:build_js",
               ],
           },
           license='GPLv3',
           classifiers=[
-              'Development Status :: 3 - Alpha',
+              'Development Status :: 4 - Beta',
               'Intended Audience :: Developers',
               'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
               'Operating System :: OS Independent',

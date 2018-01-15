@@ -3,17 +3,10 @@ import os
 
 from setuptools import Command
 
-__version__ = '0.0.1'
+__version__ = '0.1.0'
 
 
-def check_webpack_output_path(dist, attr, value):
-    """Check webpack output path.
-
-    Webpack creates non-existent directories. There is nothing to check."""
-    pass
-
-
-class run_webpack(Command):
+class build_js(Command):
     """Custom command that runs webpack."""
 
     user_options = [
