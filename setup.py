@@ -14,6 +14,9 @@ def main():
               "distutils.commands": [
                   "build_js = setuptools_webpack:build_js",
               ],
+              "distutils.setup_keywords": [
+                  "webpack_output_path = setuptools_webpack:check_webpack_output_path",
+              ],
           },
           license='GPLv3',
           classifiers=[
