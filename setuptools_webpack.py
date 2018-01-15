@@ -3,7 +3,7 @@ import os
 
 from setuptools import Command
 
-__version__ = '0.1.0'
+__version__ = '0.1.1'
 
 
 def check_webpack_output_path(dist, attr, value):
