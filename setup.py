@@ -10,6 +10,7 @@ def main():
           py_modules=['setuptools_webpack'],
           author='Jan Musilek',
           author_email='jan.musilek@nic.cz',
+          url='https://github.com/CZ-NIC/setuptools_webpack',
           entry_points={
               "distutils.commands": [
                   "build_js = setuptools_webpack:build_js",
